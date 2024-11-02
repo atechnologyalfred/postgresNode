@@ -1,9 +1,8 @@
 import express from "express";
 import pg from "pg";
-import dotenv from "dotenv";
 const port = process.env.PORT || 3000;
 import bodyParser from "body-parser";
-dotenv.config();
+
 const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded ({extended: true}));
