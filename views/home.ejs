@@ -1,0 +1,55 @@
+<%- include("partials/header.ejs") %>
+
+
+<style>
+        button {
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: all 0.5s;
+            border: none;
+            width: 10rem;
+            background-color: #fff;
+        }
+        button:hover {
+            background-color: bisque;
+            color: #000;
+        }
+        .btn {
+            margin-right: 1rem;
+            background-color: black;
+            color: #fff;
+        }
+        .body {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           text-align: center;
+           font-size: 1.8rem;
+           width: 50rem;
+           padding: 2rem;
+           
+        }
+      p {
+        margin: 1rem 0;
+      }
+      a {
+        margin-top: 1rem;
+        border: 1px solid rgb(207, 207, 207);
+      }
+      h2 {
+        letter-spacing: .5rem;
+      }
+    </style>
+</head>
+<body>
+    <div class = "body">
+        <div class = "body">
+        <h1>✅</h1>
+        <h2>Secrets</h2>
+        <p>Don't keep your secrets share them anonymously !</p>
+        <a href = "register" class = "btn">Register</a>
+        <a href = "login" class = "btn"> Login</a>
+    </div>
+</body>
+</html>

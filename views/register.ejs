@@ -1,0 +1,77 @@
+<%- include("partials/header.ejs") %>
+<style>
+    .body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    form {
+        padding: 4rem;
+        background-color: rgb(205, 241, 255);
+        width: 400px;
+        font-size: 1.4rem;
+        border: 1px solid white;
+
+
+    }
+
+    .email {
+        margin-bottom: 5px;
+    }
+    h3 {
+        text-align: center;
+        padding: 1rem;
+    }
+    input, select{
+        width: 90%;
+        margin: 5px 0;
+        padding: 9px;
+        border: none;
+        border: 1px solid gray;
+
+    }
+    input:focus, select:focus {
+        outline: 1px solid rgb(223, 223, 223);
+    }
+    .btn {
+        width: 40%;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 10px;
+        cursor: pointer;
+        padding: 5px 0;
+        border: 1px solid rgb(63, 63, 63);
+        background-color: rgb(0, 201, 252);
+    }
+
+    .btn:hover {
+        background-color: rgb(243, 235, 225);
+    }
+    label {
+        font-weight: 700;
+    }
+</style>
+<div class = "body">
+<h3>REGISTER</h3>
+<form action = "/register" method =  "POST">
+    <label>First Name:</label><br>
+    <input type = "type" classs = "register-input email" name = "first_name" required/><br>
+    <label>Interest:</label><br>
+    <select>
+        <option>Dogecoin</option>
+        <option>Bitcoin</option>
+        <option>Solana</option>
+        <option>Litcoin</option>
+        <option>Polygon</option>
+  
+    </select><br>
+
+    <label>Email:</label><br>
+    <input type = "email" classs = "register-input email" name = "email" required/><br>
+    <label>Password:</label><br>
+    <input type = "password" class = "register-password password " name = "password" required/><br>
+    <input type = "submit" class = "btn" />
+    <a href ="/" >Back</a> 
+</form>
+</div>
