@@ -12,7 +12,8 @@ const db = new pg.Client({
     host: "localhost",
     database: "register",
     password: "alfreda.a",
-;kjlk;';polllqqqssssssrrqdw'})
+    port: 5432,
+});
 db.connect();
 let open ;
 let openNot;
